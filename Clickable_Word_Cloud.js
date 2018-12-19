@@ -4,6 +4,7 @@ var margin = { top: 10, right: 10, bottom: 10, left: 10 },
 
 // Read data
 data = d3.json("Word_Value_Original.json").then(function (d) {
+
     words = d.text
     url = d.url
     /* If the size is not defined, randomly generate a number for the size of a word */
@@ -18,6 +19,7 @@ data = d3.json("Word_Value_Original.json").then(function (d) {
     /* Construct a new cloud layout instance
     layout is created by Jason Davies, https://www.jasondavies.com/wordcloud/
     */
+    
     var layout = d3.layout.cloud()
         .size([width, height])
         .timeInterval(200)
