@@ -3,7 +3,7 @@ var margin = { top: 10, right: 10, bottom: 10, left: 10 },
     height = 500 - margin.top - margin.bottom;
 
 // Read data
-data = d3.json("Word_Value_30.json").then(function (d) {
+data = d3.json("Word_Value_Original.json").then(function (d) {
     words = d.text
     url = d.url
     /* If the size is not defined, randomly generate a number for the size of a word */
